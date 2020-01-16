@@ -13,3 +13,14 @@ export const NOTES = [
   'G',
   'G#',
 ];
+
+export const SCALES_MODES = {
+  major: {
+    displayName: 'Major',
+    pattern: [2, 2, 1, 2, 2, 2, 1],
+  },
+  naturalMinor: {
+    displayName: 'Natural Minor',
+    pattern: [2, 1, 2, 2, 1, 2, 2],
+  },
+};

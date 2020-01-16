@@ -1,4 +1,4 @@
-import { NOTES } from '../components/config';
+import { NOTES, SCALES_MODES } from '../components/config';
 
 export function getNotesRange({ fromNote, semitones }) {
   const output = [fromNote];
@@ -36,4 +36,8 @@ export function getScaleFromPattern(rootNote, pattern) {
   }
 
   return output;
+}
+
+export function getScalePatternFromMode(scaleMode) {
+  return SCALES_MODES[scaleMode].pattern;
 }

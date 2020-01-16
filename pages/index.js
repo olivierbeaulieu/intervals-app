@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Fretboard from '../components/Fretboard';
-import ScaleSelect from '../components/ScaleSelect';
+import GuitarScales from '../components/GuitarScales';
 
 const Home = () => (
   <div>
@@ -20,8 +19,7 @@ const Home = () => (
         `}
       </style>
     </Head>
-    <ScaleSelect />
-    <Fretboard />
+    <GuitarScales />
   </div>
 );
 
