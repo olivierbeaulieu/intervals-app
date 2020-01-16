@@ -9,7 +9,7 @@ export default function FretNumbers({ count }) {
     const width = getFretWidth(i)
 
     output.push(
-      <div style={{ width }}>
+      <div style={{ width }} key={i}>
         {i}
       </div>
     );

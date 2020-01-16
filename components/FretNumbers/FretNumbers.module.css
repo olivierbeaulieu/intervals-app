@@ -1,12 +1,15 @@
 .FretNumbers {
   display: flex;
   flex-direction: row;
-  margin-left: 16px;
-  flex: 0 0 auto;
   text-align: center;
+  margin-left: 16px;
   margin-top: 5px;
+  color: hsl(0, 0%, 50%);
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .FretNumbers > div {
   margin-right: 3px;
+  flex: 0 0 auto;
 }

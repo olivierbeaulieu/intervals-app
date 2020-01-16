@@ -21,3 +21,19 @@ export function getNotesRange({ fromNote, semitones }) {
 export function getFretWidth(fretNumber) {
   return fretNumber === 0 ? null : 70 * Math.pow(0.97, fretNumber) + 'px';
 }
+
+export function getScaleFromPattern(rootNote, pattern) {
+  const output = [];
+  let currentIndex = notes.indexOf(rootNote);
+
+  for (const interval of pattern) {
+    output.push(notes[currentIndex]);
+
+    currentIndex += interval;
+    if (currentIndex >= notes.length) {
+      currentIndex -= notes.length;
+    }
+  }
+
+  return output;
+}
