@@ -1,18 +1,18 @@
-const notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+import { NOTES } from '../components/config';
 
 export function getNotesRange({ fromNote, semitones }) {
   const output = [fromNote];
 
-  let current = notes.indexOf(fromNote);
+  let current = NOTES.indexOf(fromNote);
 
   while (output.length < semitones) {
     current += 1;
 
-    if (current >= notes.length) {
+    if (current >= NOTES.length) {
       current = 0;
     }
 
-    output.push(notes[current]);
+    output.push(NOTES[current]);
   }
 
   return output;
@@ -24,14 +24,14 @@ export function getFretWidth(fretNumber) {
 
 export function getScaleFromPattern(rootNote, pattern) {
   const output = [];
-  let currentIndex = notes.indexOf(rootNote);
+  let currentIndex = NOTES.indexOf(rootNote);
 
   for (const interval of pattern) {
-    output.push(notes[currentIndex]);
+    output.push(NOTES[currentIndex]);
 
     currentIndex += interval;
-    if (currentIndex >= notes.length) {
-      currentIndex -= notes.length;
+    if (currentIndex >= NOTES.length) {
+      currentIndex -= NOTES.length;
     }
   }
 
