@@ -1,0 +1,12 @@
+.FretNumbers {
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+  flex: 0 0 auto;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.FretNumbers > div {
+  margin-right: 3px;
+}

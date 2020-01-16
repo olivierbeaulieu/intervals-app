@@ -1,0 +1,35 @@
+.String {
+  display: inline-flex;
+}
+
+.Fret {
+  width: 50px;
+  flex: 0 0 auto;
+  height: 30px;
+  border-right: 3px solid hsl(0, 0%, 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Fret:first-child {
+  width: 16px;
+  background: hsl(28, 45%, 15%);
+  border: none;
+}
+.Fret:first-child span {
+  width: 8px;
+  height: 8px;
+  font-size: 13px;
+}
+
+.Fret span {
+  background-color: hsl(28, 45%, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+}
