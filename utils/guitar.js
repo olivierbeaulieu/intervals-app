@@ -39,5 +39,9 @@ export function getScaleFromPattern(rootNote, pattern) {
 }
 
 export function getScalePatternFromMode(scaleMode) {
-  return SCALES_MODES[scaleMode].pattern;
+  return getScaleDefinition(scaleMode).pattern;
+}
+
+export function getScaleDefinition(scaleMode) {
+  return SCALES_MODES.find(mode => mode.id === scaleMode);
 }

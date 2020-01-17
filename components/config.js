@@ -14,62 +14,101 @@ export const NOTES = [
   'G#',
 ];
 
-export const SCALES_MODES = {
-  major: {
+export const SCALES_MODES = [
+  {
+    id: 'major',
     displayName: 'Major',
     pattern: [2, 2, 1, 2, 2, 2, 1],
   },
-  naturalMinor: {
+  {
+    id: 'naturalMinor',
     displayName: 'Natural Minor',
     pattern: [2, 1, 2, 2, 1, 2, 2],
   },
-  majorPentatonic: {
+  {
+    id: 'majorPentatonic',
     displayName: 'Major Pentatonic',
     pattern: [2, 2, 3, 2, 3],
   },
-  minorPentatonic: {
+  {
+    id: 'minorPentatonic',
     displayName: 'Minor Pentatonic',
     pattern: [3, 2, 2, 3, 2],
   },
-  blues: {
+  {
+    id: 'blues',
     displayName: 'Blues Pentatonic',
     pattern: [3, 2, 1, 1, 3, 2],
   },
-  dorian: {
+  {
+    id: 'chromatic',
+    displayName: 'Chromatic',
+    pattern: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  },
+  {
+    id: 'dorian',
     displayName: 'Dorian',
     pattern: [2, 1, 2, 2, 2, 1, 2],
   },
-  phrygian: {
+  {
+    id: 'phrygian',
     displayName: 'Phrygian',
     pattern: [1, 2, 2, 2, 1, 2, 2],
   },
-  phrygianDominant: {
+  {
+    id: 'phrygianDominant',
     displayName: 'Phrygian Dominant',
     pattern: [1, 3, 1, 2, 1, 2, 2],
   },
-  harmonicMajor: {
+  {
+    id: 'harmonicMajor',
     displayName: 'Harmonic Major',
     pattern: [2, 2, 1, 2, 1, 3, 1],
   },
-  harmonicMinor: {
+  {
+    id: 'harmonicMinor',
     displayName: 'Harmonic Minor',
     pattern: [2, 1, 2, 2, 1, 3, 1],
   },
-  hungarianMinor: {
+  {
+    id: 'hungarianMinor',
     displayName: 'Hungarian Minor',
     pattern: [2, 1, 3, 1, 1, 3, 1],
   },
 
-  locrian: {
+  {
+    id: 'locrian',
     displayName: 'Locrian',
     pattern: [1, 2, 2, 1, 2, 2, 2],
   },
-  lydian: {
+  {
+    id: 'lydian',
     displayName: 'Lydian',
     pattern: [1, 1, 1, 2, 1, 1, 2],
   },
-  mixolydian: {
+  {
+    id: 'mixolydian',
     displayName: 'Mixolydian',
     pattern: [2, 2, 1, 2, 2, 1, 2],
+  },
+];
+
+export const GROMMET_THEME = {
+  global: {
+    defaultMode: 'dark',
+    font: {
+      family: 'Source Sans Pro',
+      size: '16px',
+      height: '18px',
+    },
+    colors: {
+      brand: {
+        dark: 'hsl(42, 78%, 60%)',
+        light: 'hsl(42, 78%, 60%)',
+      },
+    },
+    input: {
+      weight: 'normal',
+    },
   },
 };

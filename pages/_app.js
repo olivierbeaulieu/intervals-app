@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import settings from '../reducers/settings';
+import { GROMMET_THEME } from '../components/config';
+import { Grommet } from 'grommet';
 
 /**
  * @param {object} initialState
@@ -40,7 +42,9 @@ class MyApp extends App {
 
     return (
       <Provider store={store}>
-        <Component {...pageProps} />
+        <Grommet theme={GROMMET_THEME}>
+          <Component {...pageProps} />
+        </Grommet>
       </Provider>
     );
   }

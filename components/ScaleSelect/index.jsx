@@ -2,37 +2,35 @@ import React from 'react';
 import { NOTES, SCALES_MODES } from "../config";
 import { connect } from "react-redux";
 import { SET_TONALITY, SET_SCALE_MODE } from '../../actions'
+import { getScaleDefinition } from '../../utils/guitar';
+import { Select } from 'grommet';
+import css from './ScaleSelect.module.css';
 
 function ScaleSelect({ tonality, scaleMode, dispatch }) {
-  return <>
-    <select
+  return <div className={css.ScaleSelect}>
+    <Select
+      options={NOTES}
       value={tonality}
-      onChange={(e) => dispatch({
+      style={{ width: '40px' }}
+      onChange={({ value }) => dispatch({
         type: SET_TONALITY,
-        payload: e.target.value
-      })}>
-      {NOTES.map(note =>
-        <option
-          key={note}
-          value={note}>
-          {note}
-        </option>)}
-    </select>
+        payload: value
+      })} />
 
-    <select
-      value={scaleMode}
-      onChange={(e) => dispatch({
-        type: SET_SCALE_MODE,
-        payload: e.target.value
-      })}>
-      {Object.keys(SCALES_MODES).map(scale =>
-        <option
-          key={scale}
-          value={scale}>
-          {SCALES_MODES[scale].displayName}
-        </option>)}
-    </select>
-  </>
+    &nbsp;&nbsp;
+
+    <Select
+      options={SCALES_MODES}
+      value={getScaleDefinition(scaleMode)}
+      labelKey="displayName"
+      valueKey="id"
+      onChange={(e) => {
+        dispatch({
+          type: SET_SCALE_MODE,
+          payload: e.value.id
+        })
+      }} />
+  </div>
 }
 
 

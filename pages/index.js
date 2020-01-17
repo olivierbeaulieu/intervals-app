@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import GuitarScales from '../components/GuitarScales';
+import '../global.css';
 
 const Home = () => (
   <div>
@@ -11,13 +12,6 @@ const Home = () => (
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
         rel="stylesheet"
       />
-      <style type="text/css">
-        {`
-        body {
-          font-family: 'Source Sans Pro', sans-serif;
-        }
-        `}
-      </style>
     </Head>
     <GuitarScales />
   </div>
