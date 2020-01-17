@@ -1,4 +1,4 @@
-import { NOTES, TUNINGS, SCALES_MODES } from '../components/config';
+import { NOTES, TUNINGS, SCALES_MODES } from '../config';
 
 export function getNotesRange({ fromNote, semitones }) {
   const output = [fromNote];

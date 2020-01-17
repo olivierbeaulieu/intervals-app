@@ -120,23 +120,3 @@ export const TUNINGS = [
     tuning: ['E', 'A', 'D', 'G'],
   },
 ];
-
-export const GROMMET_THEME = {
-  global: {
-    defaultMode: 'dark',
-    font: {
-      family: 'Source Sans Pro',
-      size: '16px',
-      height: '18px',
-    },
-    colors: {
-      brand: {
-        dark: 'hsl(42, 78%, 60%)',
-        light: 'hsl(42, 78%, 60%)',
-      },
-    },
-    input: {
-      weight: 'normal',
-    },
-  },
-};

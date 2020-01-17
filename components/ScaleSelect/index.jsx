@@ -1,5 +1,5 @@
 import React from 'react';
-import { NOTES, SCALES_MODES, TUNINGS } from "../config";
+import { NOTES, SCALES_MODES, TUNINGS } from "../../config";
 import { connect } from "react-redux";
 import { SET_TONALITY, SET_SCALE_MODE, SET_TUNING } from '../../actions'
 import { getScaleDefinition, getTuningDefinition } from '../../utils/guitar';

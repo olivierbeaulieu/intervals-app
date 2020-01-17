@@ -26,7 +26,7 @@
 
 .Fret:first-child {
   width: 16px;
-  background: hsl(28, 15%, 15%);
+  background: hsl(28, 15%, 18%);
   border: none;
 }
 .Fret:first-child span {
@@ -38,7 +38,7 @@
 }
 
 .Fret span {
-  background-color: hsl(28, 15%, 15%);
+  background-color: hsl(28, 15%, 14%);
   display: flex;
   align-items: center;
   justify-content: center;

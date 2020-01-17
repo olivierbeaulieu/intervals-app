@@ -1,5 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
-  padding: 30px;
-  border-top: 5px solid hsl(42, 78%, 60%);
+  position: relative;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: hsl(42, 78%, 60%);
 }

@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import settings from '../reducers/settings';
-import { GROMMET_THEME } from '../components/config';
+import { GROMMET_THEME } from '../theme';
 import { Grommet } from 'grommet';
 
 /**
@@ -42,7 +42,11 @@ class MyApp extends App {
 
     return (
       <Provider store={store}>
-        <Grommet theme={GROMMET_THEME}>
+        <Grommet
+          theme={GROMMET_THEME}
+          themeMode="dark"
+          style={{ minHeight: '100vh' }}
+        >
           <Component {...pageProps} />
         </Grommet>
       </Provider>

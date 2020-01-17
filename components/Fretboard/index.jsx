@@ -1,7 +1,7 @@
 import React from 'react';
 import String from '../String'
 import FretNumbers from '../FretNumbers'
-import { FRET_COUNT } from '../config'
+import { FRET_COUNT } from '../../config'
 import { getScaleFromPattern, getScalePatternFromMode, getTuningDefinition } from '../../utils/guitar'
 import css from './Fretboard.module.css'
 
