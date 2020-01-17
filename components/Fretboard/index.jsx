@@ -6,7 +6,7 @@ import { getScaleFromPattern, getScalePatternFromMode, getTuningDefinition } fro
 import css from './Fretboard.module.css'
 
 export default function Fretboard({ tonality, scaleMode, tuning }) {
-  const stringsNotes = getTuningDefinition(tuning).tuning.reverse()
+  const stringsNotes = getTuningDefinition(tuning).tuning
   const scalePattern = getScalePatternFromMode(scaleMode);
   const scale = getScaleFromPattern(tonality, scalePattern);
 
