@@ -6,3 +6,8 @@
   border-top: 2px solid hsl(28, 15%, 20%);
   border-bottom: 2px solid hsl(28, 15%, 20%);
 }
+
+.Container {
+  overflow: auto;
+  max-width: 100%;
+}
