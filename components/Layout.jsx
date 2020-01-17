@@ -19,16 +19,32 @@ const StyledFooter = styled(Footer)`
   justify-content: center;
 `
 
+const StyledHeader = styled.div`
+  font-family: Baumans;
+  font-size: 26px;
+  margin-bottom: 50px;
+  color: hsl(42, 78%, 95%);
+
+  span {
+    color: hsl(42, 78%, 60%);
+  }
+`
+
 export default function Layout({ children }) {
   return <Wrapper>
     <Head>
       <link rel="icon" href="/favicon.ico" />
+      <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet" />
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
         rel="stylesheet"
       />
     </Head>
-    <Main pad="large">{children}</Main>
+
+    <Main pad="large">
+      <StyledHeader>intervals<span>.io</span></StyledHeader>
+      {children}
+    </Main>
 
     <StyledFooter pad="medium">
       <Anchor
