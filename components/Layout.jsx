@@ -20,7 +20,7 @@ const StyledFooter = styled(Footer)`
 `
 
 const StyledHeader = styled.div`
-  font-family: Baumans;
+  font-family: "Patua One";
   font-size: 26px;
   margin-bottom: 50px;
   color: hsl(42, 78%, 95%);
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
   return <Wrapper>
     <Head>
       <link rel="icon" href="/favicon.ico" />
-      <link href="https://fonts.googleapis.com/css?family=Baumans&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet" />
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
         rel="stylesheet"
@@ -42,7 +42,7 @@ export default function Layout({ children }) {
     </Head>
 
     <Main pad="large">
-      <StyledHeader>intervals<span>.io</span></StyledHeader>
+      <StyledHeader>fretboard<span>.rocks</span></StyledHeader>
       {children}
     </Main>
 
@@ -52,7 +52,7 @@ export default function Layout({ children }) {
         label="Github"
         target="_blank"
         icon={<Github color="hsl(42, 40%, 70%)" />}
-        href="https://github.com/olivierbeaulieu/intervals-app"
+        href="https://github.com/olivierbeaulieu/fretboard-app"
       />
     </StyledFooter>
   </Wrapper>
