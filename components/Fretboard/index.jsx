@@ -13,7 +13,7 @@ export default function Fretboard({ tonality, scaleMode, tuning }) {
   // TODO add fretCount and tuning (which will enable 6 and 7 strings) as props
   return <div>
     <div className={css.Fretboard}>
-      {stringsNotes.map((note, index) => <String tuning={note} scale={scale} key={index} />)}
+      {stringsNotes.reverse().map((note, index) => <String tuning={note} scale={scale} key={index} />)}
     </div>
 
     <FretNumbers count={FRET_COUNT} />
