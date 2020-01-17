@@ -84,7 +84,7 @@ export const SCALES_MODES = [
   {
     id: 'lydian',
     displayName: 'Lydian',
-    pattern: [1, 1, 1, 2, 1, 1, 2],
+    pattern: [2, 2, 2, 1, 2, 2, 1],
   },
   {
     id: 'mixolydian',
