@@ -1,4 +1,4 @@
-import { NOTES, SCALES_MODES } from '../components/config';
+import { NOTES, TUNINGS, SCALES_MODES } from '../components/config';
 
 export function getNotesRange({ fromNote, semitones }) {
   const output = [fromNote];
@@ -44,4 +44,8 @@ export function getScalePatternFromMode(scaleMode) {
 
 export function getScaleDefinition(scaleMode) {
   return SCALES_MODES.find(mode => mode.id === scaleMode);
+}
+
+export function getTuningDefinition(tuningId) {
+  return TUNINGS.find(tuning => tuning.id === tuningId);
 }

@@ -93,6 +93,34 @@ export const SCALES_MODES = [
   },
 ];
 
+export const TUNINGS = [
+  {
+    id: 'estandard',
+    displayName: 'E Standard',
+    tuning: ['E', 'A', 'D', 'G', 'B', 'E'],
+  },
+  {
+    id: 'dstandard',
+    displayName: 'D Standard',
+    tuning: ['D', 'G', 'C', 'F', 'A', 'D'],
+  },
+  {
+    id: 'dropd',
+    displayName: 'Drop D',
+    tuning: ['D', 'A', 'D', 'G', 'B', 'E'],
+  },
+  {
+    id: '7strings',
+    displayName: '7 Strings',
+    tuning: ['B', 'E', 'A', 'D', 'G', 'B', 'E'],
+  },
+  {
+    id: 'bass',
+    displayName: 'Bass Standard',
+    tuning: ['E', 'A', 'D', 'G'],
+  },
+];
+
 export const GROMMET_THEME = {
   global: {
     defaultMode: 'dark',

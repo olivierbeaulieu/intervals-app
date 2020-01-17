@@ -1,12 +1,12 @@
 import React from 'react';
-import { NOTES, SCALES_MODES } from "../config";
+import { NOTES, SCALES_MODES, TUNINGS } from "../config";
 import { connect } from "react-redux";
-import { SET_TONALITY, SET_SCALE_MODE } from '../../actions'
-import { getScaleDefinition } from '../../utils/guitar';
+import { SET_TONALITY, SET_SCALE_MODE, SET_TUNING } from '../../actions'
+import { getScaleDefinition, getTuningDefinition } from '../../utils/guitar';
 import { Select } from 'grommet';
 import css from './ScaleSelect.module.css';
 
-function ScaleSelect({ tonality, scaleMode, dispatch }) {
+function ScaleSelect({ tonality, scaleMode, tuning, dispatch }) {
   return <div className={css.ScaleSelect}>
     <Select
       options={NOTES}
@@ -27,6 +27,20 @@ function ScaleSelect({ tonality, scaleMode, dispatch }) {
       onChange={(e) => {
         dispatch({
           type: SET_SCALE_MODE,
+          payload: e.value.id
+        })
+      }} />
+
+    &nbsp;&nbsp;
+
+    <Select
+      options={TUNINGS}
+      value={getTuningDefinition(tuning)}
+      labelKey="displayName"
+      valueKey="id"
+      onChange={(e) => {
+        dispatch({
+          type: SET_TUNING,
           payload: e.value.id
         })
       }} />
