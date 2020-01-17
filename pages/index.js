@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Layout>
       <Head>
-        <title>Home</title>
+        <title>Fretboard.rocks - Interactive Scale Visualizations</title>
       </Head>
 
       <GuitarScales />

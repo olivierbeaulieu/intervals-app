@@ -33,7 +33,7 @@ const StyledHeader = styled.div`
 export default function Layout({ children }) {
   return <Wrapper>
     <Head>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
       <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet" />
       <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
