@@ -110,7 +110,7 @@ export const TUNINGS = [
     tuning: ['D', 'A', 'D', 'G', 'B', 'E'],
   },
   {
-    id: 'dstandard',
+    id: 'dropc',
     displayName: 'Drop C',
     tuning: ['C', 'G', 'C', 'F', 'A', 'D'],
   },
