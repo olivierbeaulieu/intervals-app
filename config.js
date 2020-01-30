@@ -91,6 +91,11 @@ export const SCALES_MODES = [
     displayName: 'Mixolydian',
     pattern: [2, 2, 1, 2, 2, 1, 2],
   },
+  {
+    id: 'metallica',
+    displayName: 'Metallica Scale',
+    pattern: [1, 1, 1, 2, 1, 1, 1, 2, 2],
+  },
 ];
 
 export const TUNINGS = [
